@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF1F0;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-container {
+    height: 100vh;
+    width: 55vw;
+}
+
+.image-container {
+    height: 100vh;
+    width: 45vw;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-brandname-container {
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+.logo {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 39px;
+    height: 39px;
+    border: 2px solid #E7A09E;
+    border-radius: 50%;
+}
+
+.brandname {
+    display: inline-block;
+    width: 71px;
+    height: 39px;
+    vertical-align: top;
+    /* font-family: 'Avenir', sans-serif; */
+    letter-spacing: 4px;
+    line-height: 21px;
+}
+
+.welcome-msg-container {
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-top: 75px;
+}
+
+.welcome-msg-container p {
+    font-size: 60px;
+    letter-spacing: 18px;
+    /* font-family: 'Avenir', sans-serif; */
+    line-height: 80px;
+}
+
+#welcome-msg-1 {
+    color: #D2A1A2;
+}
+
+.desc-container {
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-top: 45px;
+}
+
+#desc {
+    color: #9A6B69;
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+    width: 400px;
+}
+
+.email-form-container {
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.email-form {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 400px;
+    height: 57px;
+    position: relative;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #9A6B69;
+    border-radius: 29px;
+    color: #5F5A5A;
+    background-color: #FAF1F0;
+    padding-left: 25px;
+    font-size: 15px;
+}
+
+button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 23%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    border-radius: 29px;
+    background-color: #E7A09E;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+button:hover {
+    background-color: #D2A1A2;
+}
+
+i {
+    font-size: 155%;
+    color: white;
+}
+
+@media (max-width: 950px) {
+    main {
+        display: block;
+    }
+
+    .content-container {
+        width: 100vw;
+    }
+
+    .image-container {
+        height: 29vh;
+        width: 100vw;
+        position: absolute;
+        top: 90px;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .logo-brandname-container {
+        box-sizing: border-box;
+        margin: 0;
+        padding-left: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .logo {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 34px;
+        height: 34px;
+        border: 2px solid #E7A09E;
+        border-radius: 50%;
+    }
+    
+    .brandname {
+        display: inline-block;
+        width: 90px;
+        height: 34px;
+        vertical-align: top;
+        font-family: 'Avenir', sans-serif;
+        letter-spacing: 4px;
+        line-height: 17px;
+        font-size: 14px;
+    }
+
+    .welcome-msg-container {
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 32vh;
+    }
+
+    .welcome-msg-container p {
+        font-size: 35px;
+        letter-spacing: 14px;
+        font-family: 'Avenir', sans-serif;
+        line-height: 50px;
+    }
+
+    .desc-container {
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #desc {
+        display: inline-block;
+        width: 80%;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .email-form-container {
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    .email-form {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 80%;
+        height: 57px;
+        position: relative;
+    }
+
+    button {
+        width: 100px;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .welcome-msg-container {
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 32vh;
+    }
+
+    .welcome-msg-container p {
+        font-size: 30px;
+        letter-spacing: 10px;
+        font-family: 'Avenir', sans-serif;
+        line-height: 40px;
+    }
+}
